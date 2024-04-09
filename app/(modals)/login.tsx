@@ -73,12 +73,14 @@ const Page = () => {
           <Ionicons name="logo-apple" size={24} style={defaultStyles.btnIcon} />
           <Text style={styles.btnOutlineText}>Continue with Apple</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.btnOutline} onPress={() => onSelectAuth(Strategy.Google) >
-          <Ionicons name='logo-google' size={24} style= {defaultStyles.btnIcon}/>
-          <Text style={styles.btnOutlineText}>Continue with Google</Text>
+        <TouchableOpacity style={styles.btnOutline} onPress={() => onSelectAuth(Strategy.Google)} >
+          <Ionicons name='logo-google' size={24} style={defaultStyles.btnIcon} />
+          <Text style={styles.btnOutlineText}>
+            Continue with Google
+          </Text>
         </TouchableOpacity>
-      <TouchableOpacity style={styles.btnOutline} onPress={() => onSelectAuth(Strategy.Facebook) >
-          <Ionicons name='logo-facebook' size={24} style= {defaultStyles.btnIcon}/>
+        <TouchableOpacity style={styles.btnOutline} onPress={() => onSelectAuth(Strategy.Facebook)} >
+          <Ionicons name='logo-facebook' size={24} style={defaultStyles.btnIcon} />
           <Text style={styles.btnOutlineText}>Continue with Facebook</Text>
         </TouchableOpacity>
       </View >
@@ -86,7 +88,7 @@ const Page = () => {
   )
 }
 const styles = StyleSheet.create({
-  constainer: {
+  container: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 26,
